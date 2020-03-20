@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>机翅膀浏览器</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./lib/swiper-5.3.1/swiper.min.css">
+    <script src="./lib/amfe-flexible/index.js"></script>
+    <script src="./lib/swiper-5.3.1/swiper.min.js"></script>
+</head>
+
+<body class="website-body guide-body">
+    <div class="swiper-container wrap website-wrap guide-wrap">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide menu">
+                <div>
+                    <a href="./website.html">
+                        <img src="./img/wangzhan.svg" alt="">
+                        <span>首页</span>
+
+                    </a>
+                </div>
+                <div>
+                    <a href="./guide.html">
+
+
+                        <img src="./img/wenti2.svg" alt="">
+                        <span>使用指南</span>
+
+
+                    </a>
+                </div>
+                <div>
+                    <a href="">
+
+                        <img src="./img/guanyu.svg" alt="">
+                        <span>关于我们</span>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide content">
+
+                <div class="page website-page guide-page">
+                    <div class="header">
+                        <div class="website-width">
+                            <div class="logo logo2">
+                                <a href="./website.html">
+                                    <img src="./img/logo2.png" alt="">
+                                </a>
+
+                            </div>
+                            <div class="menu-list2">
+                                <ul>
+                                    <li >
+                                        <a href="./website.html">
+                                            首页
+                                        </a>
+                                    </li>
+                                    <li class="on">
+                                        <a href="./guide.html">
+                                            使用指南
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            关于我们
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="menu menu-button">
+                                <a href="javascript:;">
+                                    <img src="./img/menu.png" alt="">
+                                </a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="padding"></div>
+                    <div class="area">
+                        <div class="website-width guide-width">
+
+                            <img src="./img/guide1.png" alt="">
+
+                        </div>
+                    </div>
+                    <div class="area">
+                        <div class="website-width guide-width">
+                            <div class="area-box">
+                                <div class="area-box-head">
+                                    <div class="area-num">
+                                        01
+                                    </div>
+                                    <div class="area-text">
+                                        下载安装并注册，登录后点击<span>【连接】</span>
+                                    </div>
+                                </div>
+                                <div class="area-box-body">
+                                    <img src="./img/guide2.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="area">
+                        <div class="website-width guide-width">
+                            <div class="area-box">
+                                <div class="area-box-head area-reverse">
+                                    <div class="area-text">
+                                        新用户享有免费体验，试用到期后可点 击右上角菜单<span>【续费充值】购买套餐</span>
+                                    </div>
+                                    <div class="area-num">
+                                        02
+                                    </div>
+                                </div>
+                                <div class="area-box-body">
+                                    <img src="./img/guide3.png" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="area ">
+                        <div class="website-width guide-width">
+                            <div class="area-box area-contact">
+                                <div class="area-box-head">
+
+                                    <div class="area-text">
+                                        <div>03</div>
+                                        <div>
+                                            <p>遇到使用问题，请联系官方客服！</p>
+                                            <p>客服 QQ：<span>1504384634</span></p>
+                                            <p>客服微信：<span>18027392734</span> </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="guide-footer">
+                        <div class="website-width guide-width">
+                            <div class="guide-footer-title">机翅膀浏览器</div>
+                            <div  class="guide-footer-company"><span>南昌中硕网络科技有限公司</span></div>
+                            <div>专业的跨境VPN网络服务</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+
+
+
+
+
+        var swiper2 = new Swiper('.swiper-container-h', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }, on: {
+                slideChange: function () {
+                    // console.log(this)
+                    // console.log('改变了，activeIndex为' + this.activeIndex);
+
+
+                },
+            },
+        });
+
+
+
+        var menuButton = document.querySelector('.menu-button');
+        var openMenu = function () {
+            swiper.slidePrev();
+        };
+        var swiper = new Swiper('.wrap', {
+            slidesPerView: 'auto',
+            initialSlide: 1,
+            resistanceRatio: 0,
+            slideToClickedSlide: true,
+            on: {
+                slideChangeTransitionStart: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 0) {
+                        // menuButton.classList.add('cross');
+                        // required because of slideToClickedSlide
+                        menuButton.removeEventListener('click', openMenu, true);
+                    } else {
+                        // menuButton.classList.remove('cross');
+                    }
+                }
+                , slideChangeTransitionEnd: function () {
+                    var slider = this;
+                    if (slider.activeIndex === 1) {
+                        menuButton.addEventListener('click', openMenu, true);
+                    }
+                },
+            }
+        });
+        bodyW();
+        window.onresize = function () {
+            bodyW();
+        }
+        function bodyW() {
+            var bodyW = document.querySelector('.website-body').offsetWidth;
+            var wrap = document.querySelector('.website-wrap')
+            if (bodyW > 750 && !swiper.destroyed) {
+                swiper.removeSlide(0);
+                swiper.destroy(true);
+            }
+        }
+
+
+        function hasClass(elements, cName) {
+            return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
+        };
+        function addClass(elements, cName) {
+            if (!hasClass(elements, cName)) {
+                elements.className += " " + cName;
+            };
+        };
+        function removeClass(elements, cName) {
+            if (hasClass(elements, cName)) {
+                elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), " ");
+            };
+        };
+    </script>
+</body>
+
+</html>

@@ -614,6 +614,167 @@ html, body, .page, .wrap {
     padding-bottom: .2rem;
 }
 
+.about-bg {
+    background-image: url(../img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.about-page .header{
+    background-color: #2f88fc;
+}
+
+.about-wrap .swiper-slide.content {
+    /*overflow: auto;*/
+    /*-webkit-overflow-scrolling: touch;*/
+}
+
+.about-page img {
+    height: auto;
+}
+
+.about-page .swiper-container-h {
+    height: 10rem;
+    padding: .8rem 0;
+}
+
+.about-page .swiper-container-h img {
+    height: 100%;
+}
+
+.about-page .angle {}
+
+.about-page .angle img {
+    height: 1.1rem;
+}
+
+.about-page {
+    background-image: none;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.about-page .download-text {
+    text-align: center;
+    padding: .8rem .34rem;
+}
+
+.about-page .download-text h1 {
+    font-size: .6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.about-page .download-text p {
+    font-size: .37rem;
+    color: #fff;
+}
+
+.about-page .download-btn {
+    padding-top: .4rem;
+}
+
+.about-page .download-btn a {
+    display: inline-flex;
+    background-color: #fff;
+    border-radius: 50px;
+    align-items: center;
+    padding: .2rem .4rem;
+}
+
+.about-page .download-btn a img {
+    height: .6rem;
+    display: inline-block;
+    margin-right: .2rem;
+}
+
+.about-page .download-btn a span {
+    font-size: .34rem;
+    color: #2f88fc;
+}
+
+.about-page .section2 {
+    padding: 1.6rem .34rem;
+}
+
+.about-page .section3 {
+    padding: 1.6rem .34rem;
+    background-color: #f0f3f8;
+    background: url(../img/about-02.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.about-page .section4 {
+    padding: 1.6rem .34rem;
+}
+
+.about-page .section5 {
+    padding: 1.6rem .34rem;
+    background-color: #f0f3f8;
+}
+
+.about-page .img-item img {
+    height: 7.8rem;
+}
+
+.about-page .text-item {
+    font-size: .37rem;
+    color: #666;
+    text-align: center;
+    padding: 0.8rem 19% 0;
+}
+
+.about-page .text-item h1 {
+    color: #2f88fc;
+    font-size: .64rem;
+    font-weight: 600;
+    padding-bottom: .4rem;
+}
+
+.about-page .step {
+    margin: 0 -19%;
+    font-size: 0;
+    padding-top: .8rem;
+}
+
+.about-page .step .step-item {
+    font-size: .25rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    padding: 0 1%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.about-page .step .step-item::before {
+    content: '';
+    position: absolute;
+    background: url(../img/website-dot.png) no-repeat center / 100%;
+    height: .56rem;
+    width: .56rem;
+    right: 0;
+    margin-right: -0.28rem;
+}
+
+.about-page .step .step-item:last-child::before {
+    display: none;
+}
+
+.about-page .step .step-item img {
+    height: 0.56rem;
+    padding-bottom: .2rem;
+}
+.about-page .footer{
+    background: url(../img/about-foot.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
 .footer {
     padding: .53rem .34rem;
     text-align: center;
@@ -872,6 +1033,18 @@ html, body, .page, .wrap {
     .website-body .swiper-slide.menu>div>a>span {
         width: 4em;
     }
+    .about-page .menu-list2 {
+        display: none;
+    }
+    .about-page .qrcode2 {
+        display: none;
+    }
+    .about-page .download-btn a:last-child {
+        display: none;
+    }
+    .about-body .swiper-slide.menu>div>a>span {
+        width: 4em;
+    }
 }
 
 @media all and (min-width: 1000px) {
@@ -1042,5 +1215,116 @@ html, body, .page, .wrap {
     }
     .guide-footer {
         padding: 70px 0;
+    }
+    .about-page .img-item img {
+        width: 100%;
+    }
+    .about-body {
+        max-width: none;
+    }
+    .about-width {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .about-page .header .menu {
+        display: none;
+    }
+    .about-page .menu-list2 {
+        text-align: right;
+        font-size: 0;
+        color: #fff;
+    }
+    .about-page .menu-list2 li {
+        display: inline-block;
+        font-size: 22px;
+        padding: 0px 10px 6px;
+        margin: 0 10px;
+    }
+    .about-page .menu-list2 li.on {
+        border-bottom: 3px solid;
+    }
+    .about-page .menu-list2 li a {
+        color: inherit;
+    }
+    .about-page .section .about-width {
+        font-size: 0;
+    }
+    .about-page .section .about-width .angle {
+        display: none;
+    }
+    .about-page .section .about-width .swiper-container-h, .about-page .section .about-width .download-text {
+        width: 50%;
+        vertical-align: top;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .about-page .section .about-width .download-text .qrcode2 {
+        border: .15rem solid #fff;
+        height: 175px;
+        margin-top: .4rem;
+    }
+    .about-page .section .about-width .download-btn a:last-child {
+        margin-left: .3rem;
+    }
+    .about-page .section .about-width .swiper-container-h {
+        margin-bottom: 87px;
+    }
+    .about-page .section2 {
+        padding-top: 2rem;
+    }
+    .about-page .section2 .about-width, .about-page .section4 .about-width {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .about-page .section3 .about-width, .about-page .section5 .about-width {
+        display: flex;
+    }
+    .about-page .section2 .about-width>div, .about-page .section3 .about-width>div, .about-page .section4 .about-width>div, .about-page .section5 .about-width>div {
+        width: 50%;
+    }
+    .about-page .section2 .about-width .text-item, .about-page .section4 .about-width .text-item {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 10%;
+        box-sizing: border-box;
+    }
+    .about-page .section3 .about-width .text-item, .about-page .section5 .about-width .text-item {
+        box-sizing: border-box;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-page .section3 .about-width .img-item img {
+        display: none;
+    }
+    .about-page .section3 .about-width .img-item .img {
+        height: 7.8rem;
+        background: url(../img/website31.png) no-repeat center / auto 100%;
+    }
+    .about-page .section3 .about-width .step {
+        margin: 0;
+    }
+    .about-page .section5 {
+        background-color: #fff;
+    }
+    .about-page .footer .about-width {
+        /* display: flex; */
+        flex-direction: row-reverse;
+    }
+    .about-page .footer .footer-text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about-page .footer .qrcode {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-page .footer .qrcode img {
+        margin-top: .1rem;
     }
 }

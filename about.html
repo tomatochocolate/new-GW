@@ -12,8 +12,8 @@
     <script src="./lib/swiper-5.3.1/swiper.min.js"></script>
 </head>
 
-<body class="website-body">
-    <div class="swiper-container wrap website-wrap">
+<body class="about-body">
+    <div class="swiper-container wrap about-wrap">
         <div class="swiper-wrapper">
             <div class="swiper-slide menu">
                 <div>
@@ -25,11 +25,8 @@
                 </div>
                 <div>
                     <a href="./guide.html">
-
-
                         <img src="./img/wenti2.svg" alt="">
                         <span>使用指南</span>
-
 
                     </a>
                 </div>
@@ -43,9 +40,9 @@
             </div>
             <div class="swiper-slide content">
 
-                <div class="page website-page">
+                <div class="page about-page">
                     <div class="header">
-                        <div class="website-width">
+                        <div class="about-width">
                             <div class="logo logo2">
                                 <a href="./website.html">
                                     <img src="./img/logo2.png" alt="">
@@ -54,7 +51,7 @@
                             </div>
                             <div class="menu-list2">
                                 <ul>
-                                    <li class="on">
+                                    <li >
                                         <a href="./website.html">
                                             首页
                                         </a>
@@ -64,7 +61,7 @@
                                             使用指南
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="on">
                                         <a href="./about.html">
                                             关于我们
                                         </a>
@@ -81,8 +78,8 @@
 
 
                     </div>
-                    <div class="section blue-bg">
-                        <div class="website-width">
+                    <div class="section about-bg">
+                        <div class="about-width">
 
 
                             <div class="padding"></div>
@@ -118,7 +115,7 @@
                         </div>
                     </div>
                     <div class="section2">
-                        <div class="website-width">
+                        <div class="about-width">
                             <div class="img-item">
                                 <img src="./img/website2.png" alt="">
                             </div>
@@ -130,7 +127,7 @@
 
                     </div>
                     <div class="section3">
-                        <div class="website-width">
+                        <div class="about-width">
                             <div class="img-item">
                                 <img src="./img/website3.png" alt="">
                                 <div class="img"></div>
@@ -177,7 +174,7 @@
 
                     </div>
                     <div class="section4">
-                        <div class="website-width">
+                        <div class="about-width">
                             <div class="img-item">
                                 <img src="./img/website4.png" alt="">
                             </div>
@@ -193,7 +190,7 @@
 
                     </div>
                     <div class="section5">
-                        <div class="website-width">
+                        <div class="about-width">
                             <div class="img-item">
                                 <img src="./img/website5.png" alt="">
                             </div>
@@ -205,8 +202,18 @@
                         </div>
                     </div>
                     <div class="footer">
-                        <div class="website-width">
-                            <div class="qrcode">
+                        <div class="about-width">
+                            <div class="about-footer">
+                                <h3>机翅膀浏览器</h3>
+                                <div class="hua">南昌中硕网络科技有限公司</div>
+                                <span>专业的跨境VPN网络服务</span>
+                                <div >安全、快速、稳定的跨境互联网访问工具，全新的海外互联网访问体验，帮助用户开心冲浪国际
+                                </div>
+                                <div>
+                                    站点,玩外服游戏、看海外电影、学多元文化，观看世界赛事，享国际资讯，交全球朋友。
+                                </div>
+                            </div>
+                            <!-- <div class="qrcode">
                                 <img src="./img/qrcode.png" alt="">
                                 <p>
                                     扫码下载APP
@@ -219,7 +226,7 @@
                                 <div class="slogan">
                                     打开机翅膀，和世界Say Hello！
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -289,8 +296,8 @@
             bodyW();
         }
         function bodyW() {
-            var bodyW = document.querySelector('.website-body').offsetWidth;
-            var wrap = document.querySelector('.website-wrap')
+            var bodyW = document.querySelector('.about-body').offsetWidth;
+            var wrap = document.querySelector('.about-wrap')
             if (bodyW > 750 && !swiper.destroyed) {
                 swiper.removeSlide(0);
                 swiper.destroy(true);

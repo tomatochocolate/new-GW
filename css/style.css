@@ -1273,14 +1273,14 @@ html, body, .page, .wrap {
         padding-top: 2rem;
     }
     .about-page .section2 .about-width, .about-page .section4 .about-width {
-        display: flex;
+        /* display: flex; */
         flex-direction: row-reverse;
     }
     .about-page .section3 .about-width, .about-page .section5 .about-width {
-        display: flex;
+        /* display: flex; */
     }
     .about-page .section2 .about-width>div, .about-page .section3 .about-width>div, .about-page .section4 .about-width>div, .about-page .section5 .about-width>div {
-        width: 50%;
+        /* width: 50%; */
     }
     .about-page .section2 .about-width .text-item, .about-page .section4 .about-width .text-item {
         padding: 0;
@@ -1327,4 +1327,60 @@ html, body, .page, .wrap {
     .about-page .footer .qrcode img {
         margin-top: .1rem;
     }
+}
+
+.dialog,.dialog-share {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    z-index: 99999;
+    background: rgba(0, 0, 0, .7);
+}
+
+.dialog.open ,.dialog-share.open{
+    display: block;
+}
+
+.dialog-wrap {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.dialog-head {
+    position: relative;
+    z-index: 9;
+    transform: translateY(50%);
+}
+
+.dialog-head img {
+    /* transform: translateY(-50%); */
+    width: 100%;
+}
+
+.dialog-body {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2rem .7rem 1rem;
+    font-size: .5rem;
+    text-align: center;
+}
+
+.dialog-title {
+    font-size: .7rem;
+}
+
+.dialog-text {
+    padding: .8rem 0;
+}
+
+.dialog-text a {
+    color: #007aff;
+}
+.dialog-share img{
+    width: 100%;
 }

@@ -516,7 +516,7 @@ html, body, .page, .wrap {
 }
 
 .website-page .download-text p {
-    font-size: .37rem;
+    font-size: .5rem;
     color: #fff;
 }
 
@@ -529,7 +529,7 @@ html, body, .page, .wrap {
     background-color: #fff;
     border-radius: 50px;
     align-items: center;
-    padding: .2rem .4rem;
+    padding: .4rem .6rem;
 }
 
 .website-page .download-btn a img {
@@ -791,7 +791,7 @@ html, body, .page, .wrap {
 
 .footer .qrcode {
     font-size: .32rem;
-    padding-bottom: .2rem;
+    padding-bottom: .6rem;
 }
 
 .footer .slogan {

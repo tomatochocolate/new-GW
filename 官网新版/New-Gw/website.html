@@ -6,20 +6,10 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>机翅膀浏览器</title>
-    <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./lib/swiper-5.3.1/swiper.min.css">
     <script src="./lib/amfe-flexible/index.js"></script>
     <script src="./lib/swiper-5.3.1/swiper.min.js"></script>
-    <style>
-        .footer a{
-            padding: .53rem .34rem;
-            text-align: center;
-            background-color: #2f88fc;
-            color: #fff;
-            font-size: 0.3rem;
-        }
-    </style>
 </head>
 
 <body class="website-body">
@@ -44,7 +34,7 @@
                     </a>
                 </div>
                 <div>
-                    <a href="./about.html">
+                    <a href="">
 
                         <img src="./img/guanyu.svg" alt="">
                         <span>关于我们</span>
@@ -75,7 +65,7 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="./about.html">
+                                        <a href="">
                                             关于我们
                                         </a>
                                     </li>
@@ -115,11 +105,11 @@
                                 <p>24小时免费体验时长</p>
                                 <img src="./img/qrcode.png" class="qrcode2" alt="">
                                 <div class="download-btn">
-                                    <a href="javascript:;" onclick="isWeiXin()">
+                                    <a href="">
                                         <img src="./img/android.png" alt="">
                                         <span>下载安卓版</span>
                                     </a>
-                                    <a href="https://alioss.jichibang2019.com/apps/windows/jichibang_10.8.1000.27.exe">
+                                    <a href="">
                                         <img src="./img/win.png" alt="">
                                         <span>下载WIN版</span>
                                     </a>
@@ -134,7 +124,7 @@
                             </div>
                             <div class="text-item">
                                 <h1>跨境互联 一键出海</h1>
-                                <p>看国际电影、学多元文化、观世界赛事、交全球朋友、享国际资讯，您值的拥有！</p>
+                                <p>看国际电影、学多元文化、观世界赛事、叫全球朋友、享国际资讯，您值的拥有！</p>
                             </div>
                         </div>
 
@@ -224,7 +214,7 @@
                             </div>
                             <div class="footer-text">
                                 <div class="copyright2">
-                                    <a href="http://www.beian.miit.gov.cn" target="_blank">版权所有 © 2019 南昌中硕 赣ICP备19014681号</a>
+                                    版权所有 © 2019 南昌中硕 赣ICP备19014681号
                                 </div>
                                 <div class="slogan">
                                     打开机翅膀，和世界Say Hello！
@@ -236,10 +226,6 @@
             </div>
         </div>
     </div>
-    <div class="dialog-share" id="dialog-share">
-        <img src="./img/dialog-share.png" alt="">
-        <img onclick="dialogClosed()" src="./img/dialog-closed.png" alt="">
-    </div>
 
 
 
@@ -249,20 +235,8 @@
 
 
     <script>
-        var hideBox = document.getElementById('dialog-share');
-        function isWeiXin() {
-            var ua = window.navigator.userAgent.toLowerCase();
-            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
-                hideBox.style.display = "block"
-            }
-            else{
-                window.location.href="https://alioss.jichibang2019.com/apps/android/jichibang-2.0.0.1014.apk"   
-            }
-        }
-        
-        function dialogClosed(){
-            hideBox.style.display = "none"
-        }
+
+
 
 
 

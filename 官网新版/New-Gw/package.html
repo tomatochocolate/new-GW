@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>购买套餐</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- <link rel="stylesheet" href="./lib/swiper-5.3.1/swiper.min.css"> -->
+    <script src="./lib/amfe-flexible/index.js"></script>
+    <!-- <script src="./lib/swiper-5.3.1/swiper.min.js"></script> -->
+</head>
+
+<body class="package-body">
+
+    <div class="package-page">
+        <div class="package-tab">
+            <div class="package-tab-item on" onclick="tab(0)">
+                普通线路
+            </div>
+            <div class="package-tab-item" onclick="tab(1)">
+                高速线路
+            </div>
+        </div>
+        <div class="package-content">
+            <div class="package-content-item show">
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            月付会员
+                        </div>
+                        <div class="col">
+                            ￥30.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：1个月（30天）
+                        </div>
+                        <div class="col">
+                            ￥1 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            季付会员
+                        </div>
+                        <div class="col">
+                            ￥86.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：3个月（90天）
+                        </div>
+                        <div class="col">
+                            ￥0.96 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group package-hot">
+                    <div class="row">
+                        <div class="col">
+                            半年会员
+                        </div>
+                        <div class="col">
+                            ￥155.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：6个月（180天）
+                        </div>
+                        <div class="col">
+                            ￥0.86 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            年付会员
+                        </div>
+                        <div class="col">
+                            ￥288.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：12个月（365天）
+                        </div>
+                        <div class="col">
+                            ￥0.8 / 天
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="package-content-item">
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            月付会员
+                        </div>
+                        <div class="col">
+                            ￥30.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：1个月（30天）
+                        </div>
+                        <div class="col">
+                            ￥1 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            季付会员
+                        </div>
+                        <div class="col">
+                            ￥86.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：3个月（90天）
+                        </div>
+                        <div class="col">
+                            ￥0.96 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group package-hot">
+                    <div class="row">
+                        <div class="col">
+                            半年会员
+                        </div>
+                        <div class="col">
+                            ￥155.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：6个月（180天）
+                        </div>
+                        <div class="col">
+                            ￥0.86 / 天
+                        </div>
+                    </div>
+                </div>
+                <div class="package-content-group">
+                    <div class="row">
+                        <div class="col">
+                            年付会员
+                        </div>
+                        <div class="col">
+                            ￥288.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            会员时长：12个月（365天）
+                        </div>
+                        <div class="col">
+                            ￥0.8 / 天
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="package-exchange">
+            <form action="">
+                <div class="package-exchange-label">
+                    <label>充值卡密码/邀请码兑换：</label>
+                </div>
+                <div class="package-exchange-input">
+                    <input type="text" name="code" placeholder="请填写充值卡密码/邀请码">
+                    <button>兑换</button>
+                </div>
+            </form>
+        </div>
+        <div class="package-service">
+            售后客服QQ：1504384694
+        </div>
+    </div>
+
+
+    <script>
+        function tab(index) {
+            console.log(index)
+            var item = document.querySelectorAll('.package-tab .package-tab-item');
+            var cItem = document.querySelectorAll('.package-content .package-content-item');
+            var i = index ? 0 : 1;
+            addClass(item[index], 'on');
+            addClass(cItem[index], 'show');
+            removeClass(item[i], 'on');
+            removeClass(cItem[i], 'show');
+        }
+
+        function hasClass(elements, cName) {
+            return !!elements.className.match(new RegExp("(\\s|^)" + cName + "(\\s|$)"));
+        };
+        function addClass(elements, cName) {
+            if (!hasClass(elements, cName)) {
+                elements.className += " " + cName;
+            };
+        };
+        function removeClass(elements, cName) {
+            if (hasClass(elements, cName)) {
+                elements.className = elements.className.replace(new RegExp("(\\s|^)" + cName + "(\\s|$)"), " ");
+            };
+        };
+    </script>
+</body>
+
+</html>

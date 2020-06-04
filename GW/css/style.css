@@ -44,7 +44,7 @@ html, body, .page, .wrap {
 
 .swiper-slide.menu {
     min-width: 100px;
-    width: 70%;
+    width: 40%;
     max-width: 250px;
     background-color: #2C8DFB;
     color: #fff;
@@ -126,10 +126,12 @@ html, body, .page, .wrap {
 
 .header .menu {
     float: right;
+    margin-top: 0.2rem;
+    margin-right: 0.4rem;
 }
 
 .header .menu img {
-    height: .8rem;
+    height: .7rem;
 }
 
 .form {
@@ -506,7 +508,7 @@ html, body, .page, .wrap {
 
 .website-page .download-text {
     text-align: center;
-    padding: .8rem .34rem;
+    padding: 0rem .34rem 0.8rem;
 }
 
 .website-page .download-text h1 {
@@ -521,7 +523,7 @@ html, body, .page, .wrap {
 }
 
 .website-page .download-btn {
-    padding-top: .4rem;
+    padding-top: .5rem;
 }
 
 .website-page .download-btn a {
@@ -529,7 +531,7 @@ html, body, .page, .wrap {
     background-color: #fff;
     border-radius: 50px;
     align-items: center;
-    padding: .4rem .6rem;
+    padding: .2rem .4rem;
 }
 
 .website-page .download-btn a img {
@@ -539,7 +541,7 @@ html, body, .page, .wrap {
 }
 
 .website-page .download-btn a span {
-    font-size: .34rem;
+    font-size: .4rem;
     color: #2f88fc;
 }
 
@@ -566,15 +568,15 @@ html, body, .page, .wrap {
 }
 
 .website-page .text-item {
-    font-size: .37rem;
+    font-size: .4rem;
     color: #666;
     text-align: center;
-    padding: 0.8rem 19% 0;
+    padding: 0.8rem 17% 0;
 }
 
 .website-page .text-item h1 {
     color: #2f88fc;
-    font-size: .64rem;
+    font-size: .7rem;
     font-weight: 600;
     padding-bottom: .4rem;
 }
@@ -795,7 +797,9 @@ html, body, .page, .wrap {
 }
 
 .footer .slogan {
-    font-size: 0.45rem;
+    font-size: 0.55rem;
+    margin-bottom: 0.2rem;
+    letter-spacing: 4px;
 }
 
 .guide-page {
@@ -900,11 +904,19 @@ html, body, .page, .wrap {
     color: #ebebeb;
     text-align: center;
 }
+.guide-footer a{
+    /* padding: .8rem 0; */
+    font-size: 24px;
+    /* font-size: .22rem; */
+    color: #ebebeb;
+    text-align: center;
+}
 
 .guide-footer .guide-footer-title {
-    font-size: .4rem;
+    font-size: .55rem;
     color: #fff;
     font-weight: 600;
+    margin-bottom: 0.2rem;
 }
 
 .guide-footer .guide-footer-company span {
@@ -1044,6 +1056,23 @@ html, body, .page, .wrap {
     }
     .about-body .swiper-slide.menu>div>a>span {
         width: 4em;
+    }
+    .website-page .download-btn a {
+        display: inline-flex;
+        background-color: #fff;
+        border-radius: 7px;
+        align-items: center;
+        padding: .35rem .5rem;
+    }
+    .website-body .website-page .pt40 {
+        padding-top: 0;
+    }
+    .guide-footer a {
+        /* padding: .8rem 0; */
+        /* font-size: 24px; */
+        font-size: .22rem;
+        color: #ebebeb;
+        text-align: center;
     }
 }
 
@@ -1383,4 +1412,83 @@ html, body, .page, .wrap {
 }
 .dialog-share img{
     width: 100%;
+}
+
+.website-body  .pt40{
+    padding-top: 40px;
+}
+
+.package-exchange {
+    padding: .4rem .93rem;
+    font-size: .45rem;
+}
+.package-exchange-input {
+    display: flex;
+    border: 1px solid #b7bff7;
+    margin-top: .33rem;
+}
+.package-exchange-input input {
+    border: none;
+    width: 100%;
+    font-size: .42rem;
+    padding: .3rem;
+}
+.package-exchange-input button {
+    flex-shrink: 0;
+    font-size: .45rem;
+    border: none;
+    background-color: #0a80ff;
+    color: #fff;
+    padding: 0 .6rem;
+}
+
+@media all and (max-width: 999px){
+    .swiper-wrapper .w6{display: none;}
+}
+@media all and (min-width: 1000px){
+    .swiper-wrapper .w1{
+        display: none;
+    }
+    .website-page .swiper-container-h .w6 img{
+        height: 387px;
+    }
+    .section .swiper-container{
+        overflow: visible;
+    }
+    .website-body .section .download-text{
+        padding-left: 115px;
+        padding-right: 0px;
+        padding-top: 70px;
+    }
+    .website-page .download-text h1 {
+        font-size: .55rem;
+        font-weight: 600;
+        color: #fff;
+    }
+    .website-page .download-text p {
+        font-size: .4rem;
+        color: #fff;
+    }
+    .website-body .website-page .section .website-width .download-text .qrcode2 {
+        border: .15rem solid #fff;
+        height: 120px;
+        margin-top: .4rem;
+    }
+    .website-page .download-btn a {
+        display: inline-flex;
+        background-color: #fff;
+        border-radius: 50px;
+        align-items: center;
+        padding: .1rem .4rem;
+    }
+    .website-page .download-btn a img {
+        height: .6rem;
+        display: inline-block;
+        margin-right: .2rem;
+    }
+    .website-page .download-btn a span {
+        font-size: .3rem;
+        color: #2f88fc;
+    }
+
 }

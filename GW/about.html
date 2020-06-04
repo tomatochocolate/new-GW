@@ -23,12 +23,14 @@
                 font-size: 0.64rem;
                 text-align: center;
                 /* padding-top: 0.8rem; */
+                color: #000;
             }
 
             h3 {
                 font-size: 0.3rem;
                 text-align: center;
                 padding-bottom: 0.8rem;
+                color: #666;
 
             }
 
@@ -43,13 +45,13 @@
                 font-size: 0.64rem;
                 text-align: center;
                 padding-top: 1.5rem;
-                color: #ffffff;
+                color: #000;
             }
 
             .section h3 {
                 font-size: 0.3rem;
                 text-align: center;
-                color: #ffffff;
+                color: #666;
             }
 
             .advantages {
@@ -74,7 +76,6 @@
                 width: 140px;
                 border: 1px solid #bbb;
                 background: #fff;
-                opacity: 0.8;
                 padding-bottom: 0.65rem;
             }
 
@@ -191,16 +192,19 @@
 
         @media all and (max-width: 999px) {
             h2 {
-                font-size: 0.7rem;
+                font-size: 0.65rem;
                 text-align: center;
                 color: #000;
                 font-weight: 500;
             }
 
             h3 {
-                font-size: 0.4rem;
+                font-size: 0.3rem;
                 text-align: center;
                 color: #666;
+                padding-top: 0.1rem;
+                font-weight: 500;
+                opacity: 0.9;
             }
             h4 {
                 font-size: 0.48rem;
@@ -209,55 +213,57 @@
                 font-weight: 900;
             }
             .about-bg h2 {
-                padding-top: 0.8rem;
-                font-size: 0.7rem;
+                /* padding-top: 1.7rem; */
+                font-size: 0.65rem;
                 text-align: center;
-                color: #fff;
+                color: #000;
                 font-weight: 500;
             }
 
             .about-bg h3 {
-                font-size: 0.4rem;
+                font-size: 0.3rem;
                 text-align: center;
-                color: #fff;
+                color: #666;
             }
 
             .about-bg {
                 background-size: cover;
-                height: 10rem;
+                height: 13rem;
                 position: relative;
+                background-image: url(./img/about-bg2.png);
+                margin-top: 40px;
             }
 
             .advantages .advantages-page {
                 width: 2.6rem;
                 background: #fff;
-                opacity: 0.8;
                 color: #2980f3;
                 position: absolute;
+                opacity:0.8
             }
 
             .advantages .advantages-page:nth-child(1) {
-                bottom: 3.2rem;
+                bottom: 5.5rem;
                 left: 2rem;
             }
 
             .advantages .advantages-page:nth-child(2) {
-                bottom: 3.2rem;
+                bottom: 5.5rem;
                 right: 2rem;
             }
 
             .advantages .advantages-page:nth-child(3) {
-                bottom: 0.7rem;
+                bottom: 1.1rem;
                 left: 0.8rem;
             }
 
             .advantages .advantages-page:nth-child(4) {
-                bottom: 0.7rem;
+                bottom: 1.1rem;
                 left: 3.8rem;
             }
 
             .advantages .advantages-page:nth-child(5) {
-                bottom: 0.7rem;
+                bottom: 1.1rem;
                 left: 6.8rem;
             }
 
@@ -265,13 +271,13 @@
                 margin: auto;
                 text-align: center;
                 height: 100%;
-                padding: 0.3rem 0;
+                padding: 0.9rem 0;
                 font-size: 0.4rem;
             }
 
             .advantages .advantages-page img {
-                width: 0.7rem;
-                height: 0.7rem;
+                height: 1rem;
+                padding-bottom: 0.3rem;
             }
 
             .advantages .advantages-page p {
@@ -291,6 +297,7 @@
                 text-indent: 2em;
                 padding-top: 0.5rem;
                 color: #666;
+                text-align: justify;
             }
             .about-page .section3{
                 background: url(./img/mobile.jpg);
@@ -310,13 +317,13 @@
             .section4 .contact-left p {
                 line-height: 0.72rem;
                 padding: 30px 0;
-                font-size: 0.46rem;
+                font-size: 0.4rem;
             }
 
             .section4 .contact-left span {
                 line-height: 0.82rem;
                 display: block;
-                font-size: 0.46rem;
+                font-size: 0.4rem;
             }
 
             .section4 .contact-left ul {
@@ -330,6 +337,9 @@
                 text-align: center;
                 float: left;
                 padding: 0 7px;
+            }
+            .section4 .contact-left li img{
+                width: 85px;
             }
 
             .section4 .contact-left li span {
@@ -380,7 +390,7 @@
             <div class="swiper-slide menu">
                 <div>
                     <a href="./index.html">
-                        <img src="./img/wangzhan.svg" alt="">
+                        <img src="./img/wangzhan4.png" alt="">
                         <span>首页</span>
 
                     </a>
@@ -394,7 +404,6 @@
                 </div>
                 <div>
                     <a href="./about.html">
-
                         <img src="./img/guanyu.svg" alt="">
                         <span>关于我们</span>
                     </a>
@@ -407,7 +416,7 @@
                         <div class="about-width">
                             <div class="logo logo2">
                                 <a href="./index.html">
-                                    <img src="./img/logo2.png" alt="">
+                                    <img src="./img/logo.png" alt="">
                                 </a>
 
                             </div>
@@ -531,7 +540,7 @@
                                 </div>
                                 <div class="contact-left" >
                                     <p>公司地址：江西省南昌市八一大道99号洪城广场A座903室</p>
-                                    <span>客服 Q Q: 1504384634</span>
+                                    <span>客服 Q Q: 1504384694</span>
                                     <span>客服 微信: 18027392734</span>
                                     <ul>
                                         <li>
@@ -568,7 +577,7 @@
                                         南昌中硕网络科技有限公司
                                     </span>
                                 </div>
-                                <span>专 业 的 跨 境 V P N 网 络 服 务</span>
+                                <span>专 业 跨 境 V P N 网 络 服 务 商</span>
                                 <p >安全、快速、稳定的跨境互联网访问工具，全新的海外互联网访问体验，帮助用户开心冲浪国际
                                     站点,玩外服游戏、看海外电影、学多元文化，观看世界赛事，享国际资讯，交全球朋友。
                                 </p>

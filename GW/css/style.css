@@ -811,7 +811,7 @@ html, body, .page, .wrap {
 }
 
 .guide-page .area img {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .guide-page .area .area-box {
@@ -1444,6 +1444,7 @@ html, body, .page, .wrap {
 
 @media all and (max-width: 999px){
     .swiper-wrapper .w6{display: none;}
+    
 }
 @media all and (min-width: 1000px){
     .swiper-wrapper .w1{
